@@ -18,7 +18,7 @@ module.exports = {
 
             const action = await guild.guild.fetchAuditLogs({ limit: 1, type: "KICK_MEMBERS" }).then(async (audit) => audit.entries.first());
             if (!action | !action.executor) return
-            if (audit.executor.id === client.user.id) return
+            if (action.executor.id === client.user.id) return
     
             let perm = config.app.owners == action.executor.id || config.app.funny == action.executor.id || owner.get(`owners.${action.executor.id}`) || client.user.id == action.executor.id
             if (!perm) {
