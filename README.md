@@ -44,12 +44,12 @@ Si tu veux configurer le fichier [config.js](https://github.com/002-sans/Naoki-B
 ```js
 module.exports = {
     app: {
-        px: '+',
-        token: 'NzgxMjA0ODUyOTEwOTgxMTYz.GkAM43.t0y1bsPwdKBkfIoU_LWh04eOtNcekjPbCFwRz0',
-        owners: '843204602686078976',
-        funny: '843204602686078976',
-        color: '#FF0000',
-        footer: 'sltcv ?',
+        px: 'bot prefix',
+        token: 'bot token',
+        owners: 'owner id',
+        funny: 'owner id 2',
+        color: 'color in html',
+        footer: 'footer',
         maxserver: '1',
         maxVol: '150',
         everyoneMention: false,
